@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd3" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MzkTechnicalInspectionValidateUserRequest">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionValidateUserRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionValidateUserRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionValidateUserResponse">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspection_validateUser_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionUpdateStatusListRequest">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionUpdateStatusListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionUpdateStatusListRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionUpdateStatusListResponse">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionUpdateStatusListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspection_updateStatusList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetTasksRequest">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionGetTasksRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetTasksRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetTasksResponse">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionGetTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspection_getTasks_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetUserDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionGetUserDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetUserDetailsRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetUserDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionGetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspection_getUserDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionSaveImageRequest">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionSaveImageRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionSaveImageRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionSaveImageResponse">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionSaveImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspection_saveImage_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionInsertTechnicalInspectionRequest">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionInsertTechnicalInspectionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionInsertTechnicalInspectionRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionInsertTechnicalInspectionResponse">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionInsertTechnicalInspectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspection_insertTechnicalInspection_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetSubComponentsRequest">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionGetSubComponentsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetSubComponentsRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspectionGetSubComponentsResponse">
+    <wsdl:part name="parameters" element="tns:MzkTechnicalInspectionGetSubComponentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkTechnicalInspection_getSubComponents_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="MzkTechnicalInspection">
+    <wsdl:operation name="validateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkTechnicalInspection/validateUser" name="MzkTechnicalInspectionValidateUserRequest" message="tns:MzkTechnicalInspectionValidateUserRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkTechnicalInspection/validateUserResponse" name="MzkTechnicalInspectionValidateUserResponse" message="tns:MzkTechnicalInspectionValidateUserResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkTechnicalInspection/validateUserAifFaultFault" name="AifFaultFault" message="tns:MzkTechnicalInspection_validateUser_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateStatusList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkTechnicalInspection/updateStatusList" name="MzkTechnicalInspectionUpdateStatusListRequest" message="tns:MzkTechnicalInspectionUpdateStatusListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkTechnicalInspection/updateStatusListResponse" name="MzkTechnicalInspectionUpdateStatusListResponse" message="tns:MzkTechnicalInspectionUpdateStatusListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkTechnicalInspection/updateStatusListAifFaultFault" name="AifFaultFault" message="tns:MzkTechnicalInspection_updateStatusList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTasks">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getTasks" name="MzkTechnicalInspectionGetTasksRequest" message="tns:MzkTechnicalInspectionGetTasksRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getTasksResponse" name="MzkTechnicalInspectionGetTasksResponse" message="tns:MzkTechnicalInspectionGetTasksResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getTasksAifFaultFault" name="AifFaultFault" message="tns:MzkTechnicalInspection_getTasks_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getUserDetails" name="MzkTechnicalInspectionGetUserDetailsRequest" message="tns:MzkTechnicalInspectionGetUserDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getUserDetailsResponse" name="MzkTechnicalInspectionGetUserDetailsResponse" message="tns:MzkTechnicalInspectionGetUserDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getUserDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkTechnicalInspection_getUserDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkTechnicalInspection/saveImage" name="MzkTechnicalInspectionSaveImageRequest" message="tns:MzkTechnicalInspectionSaveImageRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkTechnicalInspection/saveImageResponse" name="MzkTechnicalInspectionSaveImageResponse" message="tns:MzkTechnicalInspectionSaveImageResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkTechnicalInspection/saveImageAifFaultFault" name="AifFaultFault" message="tns:MzkTechnicalInspection_saveImage_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertTechnicalInspection">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkTechnicalInspection/insertTechnicalInspection" name="MzkTechnicalInspectionInsertTechnicalInspectionRequest" message="tns:MzkTechnicalInspectionInsertTechnicalInspectionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkTechnicalInspection/insertTechnicalInspectionResponse" name="MzkTechnicalInspectionInsertTechnicalInspectionResponse" message="tns:MzkTechnicalInspectionInsertTechnicalInspectionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkTechnicalInspection/insertTechnicalInspectionAifFaultFault" name="AifFaultFault" message="tns:MzkTechnicalInspection_insertTechnicalInspection_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSubComponents">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getSubComponents" name="MzkTechnicalInspectionGetSubComponentsRequest" message="tns:MzkTechnicalInspectionGetSubComponentsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getSubComponentsResponse" name="MzkTechnicalInspectionGetSubComponentsResponse" message="tns:MzkTechnicalInspectionGetSubComponentsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkTechnicalInspection/getSubComponentsAifFaultFault" name="AifFaultFault" message="tns:MzkTechnicalInspection_getSubComponents_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

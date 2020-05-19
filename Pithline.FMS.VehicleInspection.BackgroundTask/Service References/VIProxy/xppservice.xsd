@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Mzk_ImageContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmCaseNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFileName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmImage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmImageData" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmImageName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Mzk_ImageContract" nillable="true" type="tns:Mzk_ImageContract" />
+  <xs:complexType name="MzkCustAddressContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmCustAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustPhone" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkCustAddressContract" nillable="true" type="tns:MzkCustAddressContract" />
+  <xs:complexType name="MzkDrivingTimeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmArrivalTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmCaseID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmStartTime" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkDrivingTimeContract" nillable="true" type="tns:MzkDrivingTimeContract" />
+  <xs:complexType name="MzkInspectionHistoryContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmConfirmedDueDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmUserID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkInspectionHistoryContract" nillable="true" type="tns:MzkInspectionHistoryContract" />
+  <xs:complexType name="MzkMobiCommercialAccessoriesContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q5:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmBullbarComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmEngineProtectionUnitComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHasBullbar" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasDecals" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasEngineProtectionUnit" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasJack" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasReflectiveTape" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasServiceBook" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasTools" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasTrackingDevice" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedBullbar" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedEngineProtectionUnit" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedJack" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedReflectiveTape" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedServicesBook" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSignWriting" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedTools" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedTrackingDevice" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmJackComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmReflectiveTapeComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmServiceBooksComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSignWritingComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSparseKeyShown" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmSparseKeyTested" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmToolComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTrackingDeviceComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiCommercialAccessoriesContract" nillable="true" type="tns:MzkMobiCommercialAccessoriesContract" />
+  <xs:simpleType name="NoYes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="No" />
+      <xs:enumeration value="Yes" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NoYes" nillable="true" type="tns:NoYes" />
+  <xs:complexType name="MzkMobiCommercialChassisBodyContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q6:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmChassisComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmChevronComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoorsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFloorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFuelTanksComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHeadBoardComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedChassis" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedChevron" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDoors" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFloor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFuelTanks" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHeadBoard" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLandingLegs" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelFront" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelLeft" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelRear" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelRight" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSpareWheelCarrier" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedUnderRunBumper" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmLandingLegsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelFrontComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelLeftComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelRearComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelRightComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmSpareWheelCarrierComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmUnderRunBumperComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiCommercialChassisBodyContract" nillable="true" type="tns:MzkMobiCommercialChassisBodyContract" />
+  <xs:complexType name="MzkMobiCommercialMechConditionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q7:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmAutoTransmissionComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmBatteryComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDifferentialComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmEngineComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmExhaustComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFootBrakeComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFrontSuppressionComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmGearBoxComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHandBrakeComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHydraulicPowerSteeringComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedAutoTransmission" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedBatteryComments" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDifferential" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedEngine" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedExhaust" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFootBrake" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFrontSuppression" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedGearBox" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHandBrake" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHydraulicPowerSteering" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedOilLeeks" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRearSuppression" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSteering" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmOilLeaksComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRearSuppressionComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmSteeringComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiCommercialMechConditionContract" nillable="true" type="tns:MzkMobiCommercialMechConditionContract" />
+  <xs:complexType name="MZKMobiCommercialTrimInteriorContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q8:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmBackupWarningComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmBumperComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmControlLeverComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDashboardComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoorHandleLeftComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoorHandleRightComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDriverSeatComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmEmblemComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmForksComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFrontViewComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmGrillComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmInstrumentClusterComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmInternalTriesComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedBackupWarnings" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedBumper" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedControlLevers" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDashboard" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDoorHandleLeft" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDoorHandleRight" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDriversSeat" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedEmblems" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedForks" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFrontview" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedGrill" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedInstrumentCluster" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedInternalTries" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLFQuarterPanel" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLRQuarterPanel" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLeftDoor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedMaskHydraulics" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedMast" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedMats" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedOverheadGuard" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPassengerSeat" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRFQuarterPanel" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRRQuarterPanel" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRainGuard" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRearViewMirror" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRightDoor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRoof" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSteeringWheels" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedWheelArchesLeft" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedWheelArchesRight" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedWipers" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmLFQuarterPanelComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRQuarterPanelComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLeftDoorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMastComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMastHydraulicsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMatsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmOverheadGuardComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPassengerSeatComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFQuarterPanelComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRQuarterPanelComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRainGuardComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRearViewMirrorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmRightDoorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRoofComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSteeringWheelComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmWheelArchesLeftComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmWheelArchesRightComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmWipersComments" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MZKMobiCommercialTrimInteriorContract" nillable="true" type="tns:MZKMobiCommercialTrimInteriorContract" />
+  <xs:complexType name="MzkMobiCommercialTyresContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q9:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmLFComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLFCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmLInnerAxleInComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLInnerAxleInCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmLInnerAxleOutComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLInnerAxleOutCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmLRInnerComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRInnerCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmLROuterComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLROuterCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRFComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRInnerAxleInComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRInnerAxleInCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRInnerAxleOutComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRInnerAxleOutCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRRInnerComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRInnerCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRROuterComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRROuterCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmSpareComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSpareCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiCommercialTyresContract" nillable="true" type="tns:MzkMobiCommercialTyresContract" />
+  <xs:simpleType name="MZKConditionEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Poor">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Fair">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Good">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="None">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MZKConditionEnum" nillable="true" type="tns:MZKConditionEnum" />
+  <xs:complexType name="MzkMobiPassengerAccessoriesContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q10:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmAirconComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmAlarmComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCDShuttleComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCanopyComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHasAircon" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasAlarm" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasCDShuttle" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasCanopy" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasJack" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasKey" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasMaps" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasNavigation" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasOthers" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasRadio" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasServicesBook" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasSpareType" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasSparekey" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasTools" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasTrackingUnit" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedAircon" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedAlarm" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedCDShuttle" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedCanopy" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedJack" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedKey" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedMaps" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedNavigation" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRadio" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedServicesBook" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSpareType" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSparekey" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedTools" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedTrackingUnit" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmJackComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmKeyComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMapsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNavigationComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmOtherComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRadioComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmServiceBooksComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSpareKeysComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSpareTypeComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSparseKeyShown" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmSparseKeyTested" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmToolComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTrackLineComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiPassengerAccessoriesContract" nillable="true" type="tns:MzkMobiPassengerAccessoriesContract" />
+  <xs:complexType name="MzkMobiPassengerBodyworkContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q11:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmBonetComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmBootComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoorHandlesComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHailDamageComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHubcapsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedBonnet" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedBoot" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDoorHandles" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHailDamage" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHubcaps" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLFBumper" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLFDoor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLFWheelArch" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLRBumper" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLRDoor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLRWheelArch" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLeftSide" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRFBumper" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRFDoor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRFWheelArch" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRRBumper" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRRDoor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRRWheelArch" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRightSide" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRoof" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedWipers" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmLFDoorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLFWheelArchComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRBumperComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRDoorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRWheelArchComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFBumperComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFDoorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFWheelArchComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRBumperComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRDoorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRWheelArchComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmRightSideComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRoofComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmWipersComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmlFBumperComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmleftSideComments" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiPassengerBodyworkContract" nillable="true" type="tns:MzkMobiPassengerBodyworkContract" />
+  <xs:complexType name="MzkMobiPassengerGlassContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q12:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmExitRearViewMirrorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHeadLightsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIndicatorLensesComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedExitRearViewMirror" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHeadLights" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedIndicatorLenses" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRearGlass" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSideGlass" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedTailLights" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedWindScreen" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmRearGlassComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmSideGlassComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmTailLightsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmVehicleType" type="tns:MzkVehicleType" />
+          <xs:element minOccurs="0" name="parmWindScreenComments" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiPassengerGlassContract" nillable="true" type="tns:MzkMobiPassengerGlassContract" />
+  <xs:simpleType name="MzkVehicleType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Passenger" />
+      <xs:enumeration value="Commercial" />
+      <xs:enumeration value="Trailer" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MzkVehicleType" nillable="true" type="tns:MzkVehicleType" />
+  <xs:complexType name="MzkMobiPassengerMechConditionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q13:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmRemarks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiPassengerMechConditionContract" nillable="true" type="tns:MzkMobiPassengerMechConditionContract" />
+  <xs:complexType name="MzkMobiPassengerTrimInteriorContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q14:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmCarpetsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDashComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDriversSeatComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmInternalTrimComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedCarpets" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDash" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedDriversSeat" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedInternalTrim" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLFDoorTrim" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLRDoorTrim" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPassengerSeat" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRFDoorTrim" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRRDoorTrim" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRearSeat" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmLFDoorTrimComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRDoorTrimComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPassengerSeatComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFDoorTrimComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRDoorTrimComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRearSeatComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiPassengerTrimInteriorContract" nillable="true" type="tns:MzkMobiPassengerTrimInteriorContract" />
+  <xs:complexType name="MZKMobiPassengerTyreConditionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q15:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmLFComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLFCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmLFDepth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLFMake" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmLRDepth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLRMake" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRFDepth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRFMake" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRRDepth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRRMake" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmSpareComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSpareCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmSpareDepth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSpareMake" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MZKMobiPassengerTyreConditionContract" nillable="true" type="tns:MZKMobiPassengerTyreConditionContract" />
+  <xs:complexType name="MzkMobiTrailorAccessoriesContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q16:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmHasDecals" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmHasReflectiveTape" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedReflectiveTape" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSignWriting" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmReflectiveTapeComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSignWritingComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiTrailorAccessoriesContract" nillable="true" type="tns:MzkMobiTrailorAccessoriesContract" />
+  <xs:complexType name="MzkMobiTrailorChassisBodyContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q17:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmABSActivator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmChassisComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmChevronComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFictionPlates" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFloorComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHeadBoardComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedABSActivator" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedChassis" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedChevron" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFictionPlates" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFloor" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHeadBoard" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedKingpin" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedLandingLegs" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelFront" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelLeft" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelRear" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedPanelRight" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSpareWheelCarrier" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedSuzieFitments" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedUnderRunBumper" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmKingpin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLandingLegsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelFrontComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelLeftComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelRearComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPanelRightComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmSpareWheelCarrierComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSuzieFitments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmUnderRunBumperComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiTrailorChassisBodyContract" nillable="true" type="tns:MzkMobiTrailorChassisBodyContract" />
+  <xs:complexType name="MzkMobiTrailorGlassContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q18:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmIndicatorLensesComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedIndicatorLenses" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedReflectors" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedTailLights" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmReflectorsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmTailLightsComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiTrailorGlassContract" nillable="true" type="tns:MzkMobiTrailorGlassContract" />
+  <xs:complexType name="MzkMobiTrailorMechConditionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q19:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmFootBrakeComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFrontSuppressionComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHandBrakeComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDamagedFootBrake" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedFrontSuppression" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedHandBrake" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmIsDamagedRearSuppression" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmRearSuppressionComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkMobiTrailorMechConditionContract" nillable="true" type="tns:MzkMobiTrailorMechConditionContract" />
+  <xs:complexType name="MZKMobiTrailorProofOfInspection">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MZKVehicleInspectionTableContract">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmCompanyRepSignDateTime1" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmCustomerRepSignDateTime1" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MZKMobiTrailorProofOfInspection" nillable="true" type="tns:MZKMobiTrailorProofOfInspection" />
+  <xs:complexType name="MZKVehicleInspectionTableContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q20:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmCaseId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCompanyRepSignDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmCustomerComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustomerRepSignDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmGeneralCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmRecommendation" type="tns:MZKRecommendationEnum" />
+          <xs:element minOccurs="0" name="parmTaskId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleInspector" type="xs:long" />
+          <xs:element minOccurs="0" name="parmVehicleType" type="tns:MzkVehicleType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MZKVehicleInspectionTableContract" nillable="true" type="tns:MZKVehicleInspectionTableContract" />
+  <xs:simpleType name="MZKRecommendationEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Sell">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NotFeasible">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Retain">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="None">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MZKRecommendationEnum" nillable="true" type="tns:MZKRecommendationEnum" />
+  <xs:complexType name="MZKMobiTrailorTyreConditionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q21:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmComment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCondition" type="tns:MZKConditionEnum" />
+          <xs:element minOccurs="0" name="parmDepth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMake" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPosition" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MZKMobiTrailorTyreConditionContract" nillable="true" type="tns:MZKMobiTrailorTyreConditionContract" />
+  <xs:complexType name="MzkTasksContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q22:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmCaseCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCaseID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCaseServiceRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="parmCategoryType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCollectionRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="parmComments" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmConfirmedDueDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmContactPersonAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmContactPersonName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmContactPersonPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCustPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmEEPActionStep" type="tns:EEPActionStep" />
+          <xs:element minOccurs="0" name="parmProcessStep" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmProcessStepRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmRegistrationNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmServiceRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="parmStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmStatusDueDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmTaskID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmUserID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVehicleCollectionAction" type="tns:MzkVehicleCollectionAction" />
+          <xs:element minOccurs="0" name="parmVehicleType" type="tns:MzkVehicleType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkTasksContract" nillable="true" type="tns:MzkTasksContract" />
+  <xs:simpleType name="EEPActionStep">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ProcessNone" />
+      <xs:enumeration value="ProcessCBL" />
+      <xs:enumeration value="ProcessLicenseReg" />
+      <xs:enumeration value="GenQuery" />
+      <xs:enumeration value="ServiceSchedulling">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ProcessEPStep1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">97</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ProcessEPStep2">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">98</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ProcessEPStep3">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">99</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JobCardDetails">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WorkComplete">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MaintenceServiceSheduling">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SelectSupplier">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ConfirmDriver">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CTermQuoteStep1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CTermQuoteStep2">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">101</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CTermQuoteStep3">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">102</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Procurment">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">105</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Procurment_AccRej">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">106</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitInspectionDetail">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitInspectionConfirmation">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">107</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitInspectionDataCapture">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">108</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitInspectionAcceptance">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">109</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitDamageConfirmation">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">110</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitServiceBookingDetail">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">111</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitSupplierSelection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">112</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitServiceBookingConfirmation">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">113</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Completed">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">114</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitCollectionDetail">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">115</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitVendorSelection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">116</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitCollectionConfirmation">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">117</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitCollectionDataCapture">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">118</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ProvideCollectionDetails">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">119</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SelectThirdPartyCollection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">120</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ConfirmVehicleCollection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">121</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CaptureInspectionData">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">122</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CustomerApprovals">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">123</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UploadDrives">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">124</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateDrivers">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">125</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Live">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">126</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UploadDevices">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">127</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateDevices">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">128</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ManageContract_Customer">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">129</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ManageContract_Contract">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">130</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ManageContract_AccRej">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">131</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CaptureFuelCardDetails">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">132</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ConfirmDeliveryAddress">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">133</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ReceiveFuelCard">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">134</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitDriverCollection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">135</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitDeliveryConfirmation">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">136</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitCourierCollection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">137</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitInvoice">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">138</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CaptureETagReplacementReason">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">139</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ReceiveETag">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">140</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitDeliverytoHyper">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">141</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ProvideVehicleInspectionDetails">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">142</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CustomerApprovalETD">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">144</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SalvageOfferApprove">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">145</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AwaitTechnicalInspection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">143</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SalvageOfferReject">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">146</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CustomerRejection">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">147</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CustomerRejectionETD">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">148</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MaintenanceRechargeApprove">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">149</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MaintenanceRechargeReject">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">150</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SalvageOfferRejectAddInfo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">151</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NewSalvager">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">152</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EEPActionStep" nillable="true" type="tns:EEPActionStep" />
+  <xs:simpleType name="MzkVehicleCollectionAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AwaitCollectionConfirmation" />
+      <xs:enumeration value="AwaitDeliverytoHyper" />
+      <xs:enumeration value="AwaitCollectionDataCapture" />
+      <xs:enumeration value="AwaitDamageConfirmation" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MzkVehicleCollectionAction" nillable="true" type="tns:MzkVehicleCollectionAction" />
+  <xs:complexType name="MzkValidateUserContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q23:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCompany" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCompanyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLoginType" type="tns:MzkLoginType" />
+          <xs:element minOccurs="0" name="parmUserID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmUserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkValidateUserContract" nillable="true" type="tns:MzkValidateUserContract" />
+  <xs:simpleType name="MzkLoginType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Driver">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Courier" />
+      <xs:enumeration value="Customer" />
+      <xs:enumeration value="None">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MzkLoginType" nillable="true" type="tns:MzkLoginType" />
+  <xs:complexType name="MzkVehicleDetailsContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q24:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmChassisNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmColor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmEngineNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmJobCardNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLisenceDiscCurrent" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmMake" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmModel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmODOReading" type="xs:decimal" />
+          <xs:element minOccurs="0" name="parmRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmRegNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSparseKeyShown" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmSparseKeyTested" type="tns:NoYes" />
+          <xs:element minOccurs="0" name="parmTableId" type="xs:int" />
+          <xs:element minOccurs="0" name="parmVehicleInsRecID" type="xs:long" />
+          <xs:element minOccurs="0" name="parmVehicleType" type="tns:MzkVehicleType" />
+          <xs:element minOccurs="0" name="parmlisenceDiscExpiryDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmyear" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MzkVehicleDetailsContract" nillable="true" type="tns:MzkVehicleDetailsContract" />
+  <xs:complexType name="ArrayOfMzkMobiTrailorChassisBodyContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiTrailorChassisBodyContract" nillable="true" type="tns:MzkMobiTrailorChassisBodyContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiTrailorChassisBodyContract" nillable="true" type="tns:ArrayOfMzkMobiTrailorChassisBodyContract" />
+  <xs:complexType name="ArrayOfMzkMobiPassengerBodyworkContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiPassengerBodyworkContract" nillable="true" type="tns:MzkMobiPassengerBodyworkContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiPassengerBodyworkContract" nillable="true" type="tns:ArrayOfMzkMobiPassengerBodyworkContract" />
+  <xs:complexType name="ArrayOfMzkDrivingTimeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkDrivingTimeContract" nillable="true" type="tns:MzkDrivingTimeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkDrivingTimeContract" nillable="true" type="tns:ArrayOfMzkDrivingTimeContract" />
+  <xs:complexType name="ArrayOfMzk_ImageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Mzk_ImageContract" nillable="true" type="tns:Mzk_ImageContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzk_ImageContract" nillable="true" type="tns:ArrayOfMzk_ImageContract" />
+  <xs:complexType name="ArrayOfMzkMobiTrailorAccessoriesContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiTrailorAccessoriesContract" nillable="true" type="tns:MzkMobiTrailorAccessoriesContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiTrailorAccessoriesContract" nillable="true" type="tns:ArrayOfMzkMobiTrailorAccessoriesContract" />
+  <xs:complexType name="ArrayOfMzkMobiTrailorGlassContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiTrailorGlassContract" nillable="true" type="tns:MzkMobiTrailorGlassContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiTrailorGlassContract" nillable="true" type="tns:ArrayOfMzkMobiTrailorGlassContract" />
+  <xs:complexType name="ArrayOfMzkMobiCommercialTyresContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiCommercialTyresContract" nillable="true" type="tns:MzkMobiCommercialTyresContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiCommercialTyresContract" nillable="true" type="tns:ArrayOfMzkMobiCommercialTyresContract" />
+  <xs:complexType name="ArrayOfMzkInspectionHistoryContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkInspectionHistoryContract" nillable="true" type="tns:MzkInspectionHistoryContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkInspectionHistoryContract" nillable="true" type="tns:ArrayOfMzkInspectionHistoryContract" />
+  <xs:complexType name="ArrayOfMzkMobiPassengerGlassContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiPassengerGlassContract" nillable="true" type="tns:MzkMobiPassengerGlassContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiPassengerGlassContract" nillable="true" type="tns:ArrayOfMzkMobiPassengerGlassContract" />
+  <xs:complexType name="ArrayOfMzkMobiTrailorMechConditionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiTrailorMechConditionContract" nillable="true" type="tns:MzkMobiTrailorMechConditionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiTrailorMechConditionContract" nillable="true" type="tns:ArrayOfMzkMobiTrailorMechConditionContract" />
+  <xs:complexType name="ArrayOfMzkMobiPassengerAccessoriesContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiPassengerAccessoriesContract" nillable="true" type="tns:MzkMobiPassengerAccessoriesContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiPassengerAccessoriesContract" nillable="true" type="tns:ArrayOfMzkMobiPassengerAccessoriesContract" />
+  <xs:complexType name="ArrayOfMzkTasksContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkTasksContract" nillable="true" type="tns:MzkTasksContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkTasksContract" nillable="true" type="tns:ArrayOfMzkTasksContract" />
+  <xs:complexType name="ArrayOfMZKVehicleInspectionTableContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MZKVehicleInspectionTableContract" nillable="true" type="tns:MZKVehicleInspectionTableContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMZKVehicleInspectionTableContract" nillable="true" type="tns:ArrayOfMZKVehicleInspectionTableContract" />
+  <xs:complexType name="ArrayOfMzkMobiPassengerMechConditionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiPassengerMechConditionContract" nillable="true" type="tns:MzkMobiPassengerMechConditionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiPassengerMechConditionContract" nillable="true" type="tns:ArrayOfMzkMobiPassengerMechConditionContract" />
+  <xs:complexType name="ArrayOfMzkMobiPassengerTrimInteriorContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiPassengerTrimInteriorContract" nillable="true" type="tns:MzkMobiPassengerTrimInteriorContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiPassengerTrimInteriorContract" nillable="true" type="tns:ArrayOfMzkMobiPassengerTrimInteriorContract" />
+  <xs:complexType name="ArrayOfMZKMobiTrailorTyreConditionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MZKMobiTrailorTyreConditionContract" nillable="true" type="tns:MZKMobiTrailorTyreConditionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMZKMobiTrailorTyreConditionContract" nillable="true" type="tns:ArrayOfMZKMobiTrailorTyreConditionContract" />
+  <xs:complexType name="ArrayOfMzkMobiCommercialAccessoriesContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiCommercialAccessoriesContract" nillable="true" type="tns:MzkMobiCommercialAccessoriesContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiCommercialAccessoriesContract" nillable="true" type="tns:ArrayOfMzkMobiCommercialAccessoriesContract" />
+  <xs:complexType name="ArrayOfMzkVehicleDetailsContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkVehicleDetailsContract" nillable="true" type="tns:MzkVehicleDetailsContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkVehicleDetailsContract" nillable="true" type="tns:ArrayOfMzkVehicleDetailsContract" />
+  <xs:complexType name="ArrayOfMZKMobiPassengerTyreConditionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MZKMobiPassengerTyreConditionContract" nillable="true" type="tns:MZKMobiPassengerTyreConditionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMZKMobiPassengerTyreConditionContract" nillable="true" type="tns:ArrayOfMZKMobiPassengerTyreConditionContract" />
+  <xs:complexType name="ArrayOfMZKMobiCommercialTrimInteriorContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MZKMobiCommercialTrimInteriorContract" nillable="true" type="tns:MZKMobiCommercialTrimInteriorContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMZKMobiCommercialTrimInteriorContract" nillable="true" type="tns:ArrayOfMZKMobiCommercialTrimInteriorContract" />
+  <xs:complexType name="ArrayOfMzkCustAddressContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkCustAddressContract" nillable="true" type="tns:MzkCustAddressContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkCustAddressContract" nillable="true" type="tns:ArrayOfMzkCustAddressContract" />
+  <xs:complexType name="ArrayOfMzkMobiCommercialChassisBodyContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiCommercialChassisBodyContract" nillable="true" type="tns:MzkMobiCommercialChassisBodyContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiCommercialChassisBodyContract" nillable="true" type="tns:ArrayOfMzkMobiCommercialChassisBodyContract" />
+  <xs:complexType name="ArrayOfMzkMobiCommercialMechConditionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MzkMobiCommercialMechConditionContract" nillable="true" type="tns:MzkMobiCommercialMechConditionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMzkMobiCommercialMechConditionContract" nillable="true" type="tns:ArrayOfMzkMobiCommercialMechConditionContract" />
+</xs:schema>

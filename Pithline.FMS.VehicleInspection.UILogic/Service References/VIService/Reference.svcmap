@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ec3977b9-d2be-452d-8dc6-5370a0effc42" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://196.35.126.189/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="xppservice.xsd" MetadataType="Schema" ID="431971f3-6713-4cdf-8ecd-2c0bdc2c2667" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd1" />
+    <MetadataFile FileName="xppservice1.xsd" MetadataType="Schema" ID="4e064835-15d4-4a36-a1ea-2eea98930929" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd7" />
+    <MetadataFile FileName="xppservice2.xsd" MetadataType="Schema" ID="34b69424-5cc7-4243-a9a4-a189e0067025" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd6" />
+    <MetadataFile FileName="xppservice.wsdl" MetadataType="Wsdl" ID="84eaf581-e6bb-441a-b9a1-a778ab230303" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="xppservice1.wsdl" MetadataType="Wsdl" ID="2567eb02-6181-42fb-a898-4e4f235721ef" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="xppservice3.xsd" MetadataType="Schema" ID="2131b614-932a-4356-9dbd-e446235a9be6" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd3" />
+    <MetadataFile FileName="xppservice4.xsd" MetadataType="Schema" ID="b271644a-2d36-4efd-9f74-74b4b2071d99" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd5" />
+    <MetadataFile FileName="RoutingService.wsdl" MetadataType="Wsdl" ID="36cafd49-36c7-41d1-80b8-5027da441a40" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?wsdl" />
+    <MetadataFile FileName="xppservice5.xsd" MetadataType="Schema" ID="893c2632-cfb5-454a-b87d-8d85ae8bd4cb" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd0" />
+    <MetadataFile FileName="xppservice6.xsd" MetadataType="Schema" ID="e67627fa-2f95-4ffb-abad-59f7f780d60e" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd4" />
+    <MetadataFile FileName="xppservice7.xsd" MetadataType="Schema" ID="922e5ffd-82c0-4cbb-8966-3096d5860aa8" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd2" />
+    <MetadataFile FileName="xppservice.disco" MetadataType="Disco" ID="48630bec-160c-4668-8d36-72a2bbd8f7ef" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

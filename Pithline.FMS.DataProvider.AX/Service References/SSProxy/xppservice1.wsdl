@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd3" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/SSService/xppservice.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MzkServiceSchedulingServiceGetServiceDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetServiceDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetServiceDetailsRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetServiceDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetServiceDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getServiceDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetSuburbListRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetSuburbListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetSuburbListRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetSuburbListResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetSuburbListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getSuburbList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceUpdateStatusListRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceUpdateStatusListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceUpdateStatusListRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceUpdateStatusListResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceUpdateStatusListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_updateStatusList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetServiceTypesRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetServiceTypesRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetServiceTypesRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetServiceTypesResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetServiceTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getServiceTypes_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCityListRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCityListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCityListRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCityListResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getCityList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetRegionsRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetRegionsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetRegionsRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetRegionsResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getRegions_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCustomerAddressRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCustomerAddressRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCustomerAddressRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCustomerAddressResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCustomerAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getCustomerAddress_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetZipcodeListRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetZipcodeListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetZipcodeListRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetZipcodeListResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetZipcodeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getZipcodeList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertVendDetRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceInsertVendDetRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertVendDetRequest_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q17:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertVendDetResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceInsertVendDetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_insertVendDet_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q18:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetLocationTypeRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetLocationTypeRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetLocationTypeRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetLocationTypeResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetLocationTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getLocationType_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q20:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetProvinceListRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetProvinceListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetProvinceListRequest_Headers">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q21:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetProvinceListResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetProvinceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getProvinceList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q22:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetTasksRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetTasksRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetTasksRequest_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q23:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetTasksResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getTasks_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q24:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorBySelectionRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorBySelectionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorBySelectionRequest_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorBySelectionResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorBySelectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getVendorBySelection_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q26:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetDriversRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetDriversRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetDriversRequest_Headers">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q27:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetDriversResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetDriversResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getDrivers_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q28:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertServiceDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceInsertServiceDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertServiceDetailsRequest_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q29:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertServiceDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceInsertServiceDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_insertServiceDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q30:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCountryRegionListRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCountryRegionListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCountryRegionListRequest_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCountryRegionListResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCountryRegionListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getCountryRegionList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q32:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceSaveImageRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceSaveImageRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceSaveImageRequest_Headers">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q33:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceSaveImageResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceSaveImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_saveImage_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q34:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertSerDetRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceInsertSerDetRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertSerDetRequest_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q35:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceInsertSerDetResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceInsertSerDetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_insertSerDet_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q36:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetODOReadingDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetODOReadingDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetODOReadingDetailsRequest_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetODOReadingDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetODOReadingDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getODOReadingDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q38:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceValidateUserRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceValidateUserRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceValidateUserRequest_Headers">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q39:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceValidateUserResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_validateUser_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q40:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorByNameRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorByNameRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorByNameRequest_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q41:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorByNameResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getVendorByName_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q42:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetDriverAddressRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetDriverAddressRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetDriverAddressRequest_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetDriverAddressResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetDriverAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getDriverAddress_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q44:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCustomersRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCustomersRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCustomersRequest_Headers">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q45:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetCustomersResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getCustomers_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q46:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorsByClassRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorsByClassRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorsByClassRequest_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q47:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorsByClassResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorsByClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getVendorsByClass_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q48:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendSupplirerNameRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendSupplirerNameRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendSupplirerNameRequest_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendSupplirerNameResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendSupplirerNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getVendSupplirerName_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q50:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceUpdateConfirmationDatesRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceUpdateConfirmationDatesRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceUpdateConfirmationDatesRequest_Headers">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q51:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceUpdateConfirmationDatesResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceUpdateConfirmationDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_updateConfirmationDates_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q52:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetUserDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetUserDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetUserDetailsRequest_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q53:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetUserDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getUserDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q54:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorAddressRequest">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorAddressRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorAddressRequest_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingServiceGetVendorAddressResponse">
+    <wsdl:part name="parameters" element="tns:MzkServiceSchedulingServiceGetVendorAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkServiceSchedulingService_getVendorAddress_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q56:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="MzkServiceSchedulingService">
+    <wsdl:operation name="getServiceDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getServiceDetails" name="MzkServiceSchedulingServiceGetServiceDetailsRequest" message="tns:MzkServiceSchedulingServiceGetServiceDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getServiceDetailsResponse" name="MzkServiceSchedulingServiceGetServiceDetailsResponse" message="tns:MzkServiceSchedulingServiceGetServiceDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getServiceDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getServiceDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSuburbList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getSuburbList" name="MzkServiceSchedulingServiceGetSuburbListRequest" message="tns:MzkServiceSchedulingServiceGetSuburbListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getSuburbListResponse" name="MzkServiceSchedulingServiceGetSuburbListResponse" message="tns:MzkServiceSchedulingServiceGetSuburbListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getSuburbListAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getSuburbList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateStatusList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/updateStatusList" name="MzkServiceSchedulingServiceUpdateStatusListRequest" message="tns:MzkServiceSchedulingServiceUpdateStatusListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/updateStatusListResponse" name="MzkServiceSchedulingServiceUpdateStatusListResponse" message="tns:MzkServiceSchedulingServiceUpdateStatusListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/updateStatusListAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_updateStatusList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getServiceTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getServiceTypes" name="MzkServiceSchedulingServiceGetServiceTypesRequest" message="tns:MzkServiceSchedulingServiceGetServiceTypesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getServiceTypesResponse" name="MzkServiceSchedulingServiceGetServiceTypesResponse" message="tns:MzkServiceSchedulingServiceGetServiceTypesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getServiceTypesAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getServiceTypes_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCityList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCityList" name="MzkServiceSchedulingServiceGetCityListRequest" message="tns:MzkServiceSchedulingServiceGetCityListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCityListResponse" name="MzkServiceSchedulingServiceGetCityListResponse" message="tns:MzkServiceSchedulingServiceGetCityListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCityListAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getCityList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRegions">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getRegions" name="MzkServiceSchedulingServiceGetRegionsRequest" message="tns:MzkServiceSchedulingServiceGetRegionsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getRegionsResponse" name="MzkServiceSchedulingServiceGetRegionsResponse" message="tns:MzkServiceSchedulingServiceGetRegionsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getRegionsAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getRegions_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCustomerAddress" name="MzkServiceSchedulingServiceGetCustomerAddressRequest" message="tns:MzkServiceSchedulingServiceGetCustomerAddressRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCustomerAddressResponse" name="MzkServiceSchedulingServiceGetCustomerAddressResponse" message="tns:MzkServiceSchedulingServiceGetCustomerAddressResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCustomerAddressAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getCustomerAddress_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getZipcodeList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getZipcodeList" name="MzkServiceSchedulingServiceGetZipcodeListRequest" message="tns:MzkServiceSchedulingServiceGetZipcodeListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getZipcodeListResponse" name="MzkServiceSchedulingServiceGetZipcodeListResponse" message="tns:MzkServiceSchedulingServiceGetZipcodeListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getZipcodeListAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getZipcodeList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertVendDet">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertVendDet" name="MzkServiceSchedulingServiceInsertVendDetRequest" message="tns:MzkServiceSchedulingServiceInsertVendDetRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertVendDetResponse" name="MzkServiceSchedulingServiceInsertVendDetResponse" message="tns:MzkServiceSchedulingServiceInsertVendDetResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertVendDetAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_insertVendDet_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocationType">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getLocationType" name="MzkServiceSchedulingServiceGetLocationTypeRequest" message="tns:MzkServiceSchedulingServiceGetLocationTypeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getLocationTypeResponse" name="MzkServiceSchedulingServiceGetLocationTypeResponse" message="tns:MzkServiceSchedulingServiceGetLocationTypeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getLocationTypeAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getLocationType_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProvinceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getProvinceList" name="MzkServiceSchedulingServiceGetProvinceListRequest" message="tns:MzkServiceSchedulingServiceGetProvinceListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getProvinceListResponse" name="MzkServiceSchedulingServiceGetProvinceListResponse" message="tns:MzkServiceSchedulingServiceGetProvinceListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getProvinceListAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getProvinceList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTasks">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getTasks" name="MzkServiceSchedulingServiceGetTasksRequest" message="tns:MzkServiceSchedulingServiceGetTasksRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getTasksResponse" name="MzkServiceSchedulingServiceGetTasksResponse" message="tns:MzkServiceSchedulingServiceGetTasksResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getTasksAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getTasks_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVendorBySelection">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorBySelection" name="MzkServiceSchedulingServiceGetVendorBySelectionRequest" message="tns:MzkServiceSchedulingServiceGetVendorBySelectionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorBySelectionResponse" name="MzkServiceSchedulingServiceGetVendorBySelectionResponse" message="tns:MzkServiceSchedulingServiceGetVendorBySelectionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorBySelectionAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getVendorBySelection_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDrivers">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getDrivers" name="MzkServiceSchedulingServiceGetDriversRequest" message="tns:MzkServiceSchedulingServiceGetDriversRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getDriversResponse" name="MzkServiceSchedulingServiceGetDriversResponse" message="tns:MzkServiceSchedulingServiceGetDriversResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getDriversAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getDrivers_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertServiceDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertServiceDetails" name="MzkServiceSchedulingServiceInsertServiceDetailsRequest" message="tns:MzkServiceSchedulingServiceInsertServiceDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertServiceDetailsResponse" name="MzkServiceSchedulingServiceInsertServiceDetailsResponse" message="tns:MzkServiceSchedulingServiceInsertServiceDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertServiceDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_insertServiceDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCountryRegionList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCountryRegionList" name="MzkServiceSchedulingServiceGetCountryRegionListRequest" message="tns:MzkServiceSchedulingServiceGetCountryRegionListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCountryRegionListResponse" name="MzkServiceSchedulingServiceGetCountryRegionListResponse" message="tns:MzkServiceSchedulingServiceGetCountryRegionListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCountryRegionListAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getCountryRegionList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/saveImage" name="MzkServiceSchedulingServiceSaveImageRequest" message="tns:MzkServiceSchedulingServiceSaveImageRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/saveImageResponse" name="MzkServiceSchedulingServiceSaveImageResponse" message="tns:MzkServiceSchedulingServiceSaveImageResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/saveImageAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_saveImage_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertSerDet">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertSerDet" name="MzkServiceSchedulingServiceInsertSerDetRequest" message="tns:MzkServiceSchedulingServiceInsertSerDetRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertSerDetResponse" name="MzkServiceSchedulingServiceInsertSerDetResponse" message="tns:MzkServiceSchedulingServiceInsertSerDetResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/insertSerDetAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_insertSerDet_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getODOReadingDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getODOReadingDetails" name="MzkServiceSchedulingServiceGetODOReadingDetailsRequest" message="tns:MzkServiceSchedulingServiceGetODOReadingDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getODOReadingDetailsResponse" name="MzkServiceSchedulingServiceGetODOReadingDetailsResponse" message="tns:MzkServiceSchedulingServiceGetODOReadingDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getODOReadingDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getODOReadingDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="validateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/validateUser" name="MzkServiceSchedulingServiceValidateUserRequest" message="tns:MzkServiceSchedulingServiceValidateUserRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/validateUserResponse" name="MzkServiceSchedulingServiceValidateUserResponse" message="tns:MzkServiceSchedulingServiceValidateUserResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/validateUserAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_validateUser_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVendorByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorByName" name="MzkServiceSchedulingServiceGetVendorByNameRequest" message="tns:MzkServiceSchedulingServiceGetVendorByNameRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorByNameResponse" name="MzkServiceSchedulingServiceGetVendorByNameResponse" message="tns:MzkServiceSchedulingServiceGetVendorByNameResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorByNameAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getVendorByName_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDriverAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getDriverAddress" name="MzkServiceSchedulingServiceGetDriverAddressRequest" message="tns:MzkServiceSchedulingServiceGetDriverAddressRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getDriverAddressResponse" name="MzkServiceSchedulingServiceGetDriverAddressResponse" message="tns:MzkServiceSchedulingServiceGetDriverAddressResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getDriverAddressAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getDriverAddress_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCustomers" name="MzkServiceSchedulingServiceGetCustomersRequest" message="tns:MzkServiceSchedulingServiceGetCustomersRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCustomersResponse" name="MzkServiceSchedulingServiceGetCustomersResponse" message="tns:MzkServiceSchedulingServiceGetCustomersResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getCustomersAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getCustomers_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVendorsByClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorsByClass" name="MzkServiceSchedulingServiceGetVendorsByClassRequest" message="tns:MzkServiceSchedulingServiceGetVendorsByClassRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorsByClassResponse" name="MzkServiceSchedulingServiceGetVendorsByClassResponse" message="tns:MzkServiceSchedulingServiceGetVendorsByClassResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorsByClassAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getVendorsByClass_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVendSupplirerName">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendSupplirerName" name="MzkServiceSchedulingServiceGetVendSupplirerNameRequest" message="tns:MzkServiceSchedulingServiceGetVendSupplirerNameRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendSupplirerNameResponse" name="MzkServiceSchedulingServiceGetVendSupplirerNameResponse" message="tns:MzkServiceSchedulingServiceGetVendSupplirerNameResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendSupplirerNameAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getVendSupplirerName_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateConfirmationDates">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/updateConfirmationDates" name="MzkServiceSchedulingServiceUpdateConfirmationDatesRequest" message="tns:MzkServiceSchedulingServiceUpdateConfirmationDatesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/updateConfirmationDatesResponse" name="MzkServiceSchedulingServiceUpdateConfirmationDatesResponse" message="tns:MzkServiceSchedulingServiceUpdateConfirmationDatesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/updateConfirmationDatesAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_updateConfirmationDates_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getUserDetails" name="MzkServiceSchedulingServiceGetUserDetailsRequest" message="tns:MzkServiceSchedulingServiceGetUserDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getUserDetailsResponse" name="MzkServiceSchedulingServiceGetUserDetailsResponse" message="tns:MzkServiceSchedulingServiceGetUserDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getUserDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getUserDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVendorAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorAddress" name="MzkServiceSchedulingServiceGetVendorAddressRequest" message="tns:MzkServiceSchedulingServiceGetVendorAddressRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorAddressResponse" name="MzkServiceSchedulingServiceGetVendorAddressResponse" message="tns:MzkServiceSchedulingServiceGetVendorAddressResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkServiceSchedulingService/getVendorAddressAifFaultFault" name="AifFaultFault" message="tns:MzkServiceSchedulingService_getVendorAddress_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

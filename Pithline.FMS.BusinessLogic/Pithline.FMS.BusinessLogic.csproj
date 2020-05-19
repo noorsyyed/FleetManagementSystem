@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{790AD967-F93D-402A-8857-E4C0B64D00E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pithline.FMS.BusinessLogic</RootNamespace>
+    <AssemblyName>Pithline.FMS.BusinessLogic</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <NuGetPackageImportStamp>29c0fa1e</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Base\DamageSnapshotRequiredAttribute.cs" />
+    <Compile Include="Base\BaseModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ValidationError.cs" />
+    <Compile Include="Behaviors\Behavior.cs" />
+    <Compile Include="Behaviors\HighlightFormFieldOnErrors.cs" />
+    <Compile Include="Common\IEnumerableExtensions.cs" />
+    <Compile Include="Common\MemoryRandomAccessStream.cs" />
+    <Compile Include="Common\RenderDataStampOnSnap.cs" />
+    <Compile Include="Common\StampPersistData.cs" />
+    <Compile Include="DataStamp.cs" />
+    <Compile Include="DocumentDelivery\CDTaskDetail.cs" />
+    <Compile Include="DocumentDelivery\CollectDeliverServices.cs" />
+    <Compile Include="DocumentDelivery\CollectDeliveryTask.cs" />
+    <Compile Include="Commercial\CAccessories.cs" />
+    <Compile Include="Commercial\CCabTrimInter.cs" />
+    <Compile Include="Commercial\CChassisBody.cs" />
+    <Compile Include="Commercial\CGlass.cs" />
+    <Compile Include="Commercial\CMechanicalCond.cs" />
+    <Compile Include="Commercial\CommercialVehicle.cs" />
+    <Compile Include="Commercial\CPOI.cs" />
+    <Compile Include="Commercial\CTyres.cs" />
+    <Compile Include="Commercial\CVehicleDetails.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\PropertyHistory.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerDetails.cs" />
+    <Compile Include="DocumentDelivery\CDCustomerDetails.cs" />
+    <Compile Include="DocumentDelivery\CDDrivingDuration.cs" />
+    <Compile Include="DocumentDelivery\CDUserInfo.cs" />
+    <Compile Include="DocumentDelivery\AlternateContactPerson.cs" />
+    <Compile Include="DocumentDelivery\CDCustomer.cs" />
+    <Compile Include="DocumentDelivery\Courier.cs" />
+    <Compile Include="DocumentDelivery\DocumentCollectDetail.cs" />
+    <Compile Include="DocumentDelivery\CollectDeliveryDetail.cs" />
+    <Compile Include="DocumentDelivery\Document.cs" />
+    <Compile Include="DocumentDelivery\CollectedFromData.cs" />
+    <Compile Include="DocumentDelivery\DocumentDeliveryUpdateDetail.cs" />
+    <Compile Include="DocumentDelivery\DocumentsCollector.cs" />
+    <Compile Include="DocumentDelivery\DocumnetDeliverDetail.cs" />
+    <Compile Include="DocumentDelivery\Driver.cs" />
+    <Compile Include="DrivingDuration.cs" />
+    <Compile Include="Enums\CaseTypeEnum.cs" />
+    <Compile Include="Helpers\CDTaskStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\CDTaskTypeEnum.cs" />
+    <Compile Include="Enums\CDUserType.cs" />
+    <Compile Include="Helpers\DriverTaskStatus.cs" />
+    <Compile Include="Helpers\LocationTypeConstants.cs" />
+    <Compile Include="Helpers\ProcessStep.cs" />
+    <Compile Include="Helpers\TaskStatus.cs" />
+    <Compile Include="Enums\VehicleTypeEnum.cs" />
+    <Compile Include="EventArgs\UserChangedEventArgs.cs" />
+    <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Helpers\SqliteHelper.cs" />
+    <Compile Include="Helpers\Util.cs" />
+    <Compile Include="ImageCapture.cs" />
+    <Compile Include="InspectionHistory.cs" />
+    <Compile Include="LoggedInUser.cs" />
+    <Compile Include="LogonResult.cs" />
+    <Compile Include="Passenger\PAccessories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Passenger\PassengerVehicle.cs" />
+    <Compile Include="Passenger\PBodywork.cs" />
+    <Compile Include="Passenger\PGlass.cs" />
+    <Compile Include="Passenger\PInspectionProof.cs" />
+    <Compile Include="Passenger\PMechanicalCond.cs" />
+    <Compile Include="Passenger\PTyreCondition.cs" />
+    <Compile Include="Passenger\PVehicleDetails.cs" />
+    <Compile Include="Passenger\PTrimInterior.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceSchedule\City.cs" />
+    <Compile Include="ServiceSchedule\Country.cs" />
+    <Compile Include="ServiceSchedule\DestinationType.cs" />
+    <Compile Include="ServiceSchedule\DriverTask.cs" />
+    <Compile Include="ServiceSchedule\Address.cs" />
+    <Compile Include="ServiceSchedule\ConfirmationServiceScheduling.cs" />
+    <Compile Include="ServiceSchedule\LocationType.cs" />
+    <Compile Include="ServiceSchedule\Province.cs" />
+    <Compile Include="ServiceSchedule\Region.cs" />
+    <Compile Include="ServiceSchedule\ServiceSchedulingDetail.cs" />
+    <Compile Include="ServiceSchedule\Suburb.cs" />
+    <Compile Include="ServiceSchedule\Supplier.cs" />
+    <Compile Include="ServiceSchedule\SupplierSelection.cs" />
+    <Compile Include="SnapshotsViewer.xaml.cs">
+      <DependentUpon>SnapshotsViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TI\TITask.cs" />
+    <Compile Include="TI\TIData.cs" />
+    <Compile Include="Trailer\TAccessories.cs" />
+    <Compile Include="Trailer\TChassisBody.cs" />
+    <Compile Include="Trailer\TGlass.cs" />
+    <Compile Include="Trailer\TPOI.cs" />
+    <Compile Include="Trailer\TMechanicalCond.cs" />
+    <Compile Include="Trailer\TTyreCond.cs" />
+    <Compile Include="Trailer\TVehicleDetails.cs" />
+    <Compile Include="TI\MaintenanceRepair.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="Vehicle.cs" />
+    <Compile Include="VehicleDetails.cs" />
+    <Compile Include="WeatherInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Prism.PubSubEvents">
+      <HintPath>..\packages\Prism.PubSubEvents.1.0.0\lib\portable-sl4+wp7+windows8+net40\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.StoreApps">
+      <HintPath>..\packages\Prism.StoreApps.1.1.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\netcore45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Data.WinRT">
+      <HintPath>..\packages\Syncfusion.Data.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.Data.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WinRT">
+      <HintPath>..\packages\Syncfusion.GridCommon.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.GridCommon.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfGrid.WinRT">
+      <HintPath>..\packages\Syncfusion.SfGrid.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.SfGrid.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfGridBase.WinRT">
+      <HintPath>..\packages\Syncfusion.SfGridBase.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.SfGridBase.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfInput.WinRT">
+      <HintPath>..\packages\Syncfusion.SfInput.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.SfInput.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfRadialMenu.WinRT">
+      <HintPath>..\packages\Syncfusion.SfRadialMenu.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.SfRadialMenu.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfSchedule.WinRT">
+      <HintPath>..\packages\Syncfusion.SfSchedule.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.SfSchedule.WinRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfShared.WinRT">
+      <HintPath>..\packages\Syncfusion.SfShared.WinRT451.13.1.0.21\lib\netcore451\Syncfusion.SfShared.WinRT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
+      <Name>Behaviors SDK %28XAML%29</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, version=12.0">
+      <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SnapshotsViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\SharpDX.2.6.3\build\SharpDX.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SharpDX.2.6.3\build\SharpDX.targets'))" />
+  </Target>
+  <Import Project="..\packages\SharpDX.2.6.3\build\SharpDX.targets" Condition="Exists('..\packages\SharpDX.2.6.3\build\SharpDX.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

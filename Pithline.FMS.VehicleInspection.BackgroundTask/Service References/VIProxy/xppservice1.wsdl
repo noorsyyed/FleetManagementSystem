@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd3" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorChassisBodyRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorChassisBodyRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorChassisBodyRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorChassisBodyResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorChassisBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editTrailorChassisBody_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerBodyworkRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerBodyworkRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerBodyworkRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerBodyworkResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerBodyworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editPassengerBodywork_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceReadDrivingTimeRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceReadDrivingTimeRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceReadDrivingTimeRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceReadDrivingTimeResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceReadDrivingTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_readDrivingTime_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceSaveImageRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceSaveImageRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceSaveImageRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceSaveImageResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceSaveImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_saveImage_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorAccessoriesRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorAccessoriesRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorAccessoriesRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorAccessoriesResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorAccessoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editTrailorAccessories_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorGlassRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorGlassRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorGlassRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorGlassResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorGlassResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editTrailorGlass_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialTyreConditionRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialTyreConditionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialTyreConditionRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialTyreConditionResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialTyreConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editCommercialTyreCondition_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetInspectionHistoryRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetInspectionHistoryRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetInspectionHistoryRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetInspectionHistoryResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetInspectionHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_getInspectionHistory_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceValidateUserRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceValidateUserRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceValidateUserRequest_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q17:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceValidateUserResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_validateUser_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q18:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditGlassRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditGlassRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditGlassRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditGlassResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditGlassResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editGlass_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q20:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorMechConditionRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorMechConditionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorMechConditionRequest_Headers">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q21:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorMechConditionResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorMechConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editTrailorMechCondition_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q22:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerAccessoriesRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerAccessoriesRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerAccessoriesRequest_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q23:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerAccessoriesResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerAccessoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editPassengerAccessories_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q24:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateConfirmationDateRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceUpdateConfirmationDateRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateConfirmationDateRequest_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateConfirmationDateResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceUpdateConfirmationDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_updateConfirmationDate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q26:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditVehicleInspectionRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditVehicleInspectionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditVehicleInspectionRequest_Headers">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q27:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditVehicleInspectionResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditVehicleInspectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editVehicleInspection_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q28:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceCreateVehicleInspectionTableRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceCreateVehicleInspectionTableRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceCreateVehicleInspectionTableRequest_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q29:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceCreateVehicleInspectionTableResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceCreateVehicleInspectionTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_createVehicleInspectionTable_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q30:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerMechConditionRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerMechConditionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerMechConditionRequest_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerMechConditionResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerMechConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editPassengerMechCondition_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q32:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerTrimInteriorRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerTrimInteriorRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerTrimInteriorRequest_Headers">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q33:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerTrimInteriorResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerTrimInteriorResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editPassengerTrimInterior_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q34:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorTyreConditionRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorTyreConditionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorTyreConditionRequest_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q35:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditTrailorTyreConditionResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditTrailorTyreConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editTrailorTyreCondition_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q36:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialAccessoriesRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialAccessoriesRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialAccessoriesRequest_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialAccessoriesResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialAccessoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editCommercialAccessories_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q38:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditVehicleDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditVehicleDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditVehicleDetailsRequest_Headers">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q39:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditVehicleDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditVehicleDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editVehicleDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q40:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetTasksRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetTasksRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetTasksRequest_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q41:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetTasksResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_getTasks_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q42:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceReadVehicleDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceReadVehicleDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceReadVehicleDetailsRequest_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceReadVehicleDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceReadVehicleDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_readVehicleDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q44:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerTyreConditionRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerTyreConditionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerTyreConditionRequest_Headers">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q45:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditPassengerTyreConditionResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditPassengerTyreConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editPassengerTyreCondition_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q46:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateDrivingTimeRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceUpdateDrivingTimeRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateDrivingTimeRequest_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q47:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateDrivingTimeResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceUpdateDrivingTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_updateDrivingTime_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q48:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialTrimInteriorRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialTrimInteriorRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialTrimInteriorRequest_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialTrimInteriorResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialTrimInteriorResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editCommercialTrimInterior_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q50:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetUserDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetUserDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetUserDetailsRequest_Headers">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q51:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetUserDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_getUserDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q52:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetCustDetailsRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetCustDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetCustDetailsRequest_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q53:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceGetCustDetailsResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceGetCustDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_getCustDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q54:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateStatusListRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceUpdateStatusListRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateStatusListRequest_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceUpdateStatusListResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceUpdateStatusListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_updateStatusList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q56:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialChassisBodyRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialChassisBodyRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialChassisBodyRequest_Headers">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q57:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialChassisBodyResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialChassisBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editCommercialChassisBody_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q58:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialMechConditionRequest">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialMechConditionRequest" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialMechConditionRequest_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q59:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionServiceEditCommercialMechConditionResponse">
+    <wsdl:part name="parameters" element="tns:MzkVehicleInspectionServiceEditCommercialMechConditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MzkVehicleInspectionService_editCommercialMechCondition_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q60:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="MzkVehicleInspectionService">
+    <wsdl:operation name="editTrailorChassisBody">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorChassisBody" name="MzkVehicleInspectionServiceEditTrailorChassisBodyRequest" message="tns:MzkVehicleInspectionServiceEditTrailorChassisBodyRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorChassisBodyResponse" name="MzkVehicleInspectionServiceEditTrailorChassisBodyResponse" message="tns:MzkVehicleInspectionServiceEditTrailorChassisBodyResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorChassisBodyAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editTrailorChassisBody_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editPassengerBodywork">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerBodywork" name="MzkVehicleInspectionServiceEditPassengerBodyworkRequest" message="tns:MzkVehicleInspectionServiceEditPassengerBodyworkRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerBodyworkResponse" name="MzkVehicleInspectionServiceEditPassengerBodyworkResponse" message="tns:MzkVehicleInspectionServiceEditPassengerBodyworkResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerBodyworkAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editPassengerBodywork_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="readDrivingTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/readDrivingTime" name="MzkVehicleInspectionServiceReadDrivingTimeRequest" message="tns:MzkVehicleInspectionServiceReadDrivingTimeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/readDrivingTimeResponse" name="MzkVehicleInspectionServiceReadDrivingTimeResponse" message="tns:MzkVehicleInspectionServiceReadDrivingTimeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/readDrivingTimeAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_readDrivingTime_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/saveImage" name="MzkVehicleInspectionServiceSaveImageRequest" message="tns:MzkVehicleInspectionServiceSaveImageRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/saveImageResponse" name="MzkVehicleInspectionServiceSaveImageResponse" message="tns:MzkVehicleInspectionServiceSaveImageResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/saveImageAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_saveImage_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editTrailorAccessories">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorAccessories" name="MzkVehicleInspectionServiceEditTrailorAccessoriesRequest" message="tns:MzkVehicleInspectionServiceEditTrailorAccessoriesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorAccessoriesResponse" name="MzkVehicleInspectionServiceEditTrailorAccessoriesResponse" message="tns:MzkVehicleInspectionServiceEditTrailorAccessoriesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorAccessoriesAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editTrailorAccessories_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editTrailorGlass">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorGlass" name="MzkVehicleInspectionServiceEditTrailorGlassRequest" message="tns:MzkVehicleInspectionServiceEditTrailorGlassRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorGlassResponse" name="MzkVehicleInspectionServiceEditTrailorGlassResponse" message="tns:MzkVehicleInspectionServiceEditTrailorGlassResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorGlassAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editTrailorGlass_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editCommercialTyreCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialTyreCondition" name="MzkVehicleInspectionServiceEditCommercialTyreConditionRequest" message="tns:MzkVehicleInspectionServiceEditCommercialTyreConditionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialTyreConditionResponse" name="MzkVehicleInspectionServiceEditCommercialTyreConditionResponse" message="tns:MzkVehicleInspectionServiceEditCommercialTyreConditionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialTyreConditionAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editCommercialTyreCondition_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getInspectionHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getInspectionHistory" name="MzkVehicleInspectionServiceGetInspectionHistoryRequest" message="tns:MzkVehicleInspectionServiceGetInspectionHistoryRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getInspectionHistoryResponse" name="MzkVehicleInspectionServiceGetInspectionHistoryResponse" message="tns:MzkVehicleInspectionServiceGetInspectionHistoryResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getInspectionHistoryAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_getInspectionHistory_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="validateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/validateUser" name="MzkVehicleInspectionServiceValidateUserRequest" message="tns:MzkVehicleInspectionServiceValidateUserRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/validateUserResponse" name="MzkVehicleInspectionServiceValidateUserResponse" message="tns:MzkVehicleInspectionServiceValidateUserResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/validateUserAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_validateUser_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editGlass">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editGlass" name="MzkVehicleInspectionServiceEditGlassRequest" message="tns:MzkVehicleInspectionServiceEditGlassRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editGlassResponse" name="MzkVehicleInspectionServiceEditGlassResponse" message="tns:MzkVehicleInspectionServiceEditGlassResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editGlassAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editGlass_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editTrailorMechCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorMechCondition" name="MzkVehicleInspectionServiceEditTrailorMechConditionRequest" message="tns:MzkVehicleInspectionServiceEditTrailorMechConditionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorMechConditionResponse" name="MzkVehicleInspectionServiceEditTrailorMechConditionResponse" message="tns:MzkVehicleInspectionServiceEditTrailorMechConditionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorMechConditionAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editTrailorMechCondition_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editPassengerAccessories">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerAccessories" name="MzkVehicleInspectionServiceEditPassengerAccessoriesRequest" message="tns:MzkVehicleInspectionServiceEditPassengerAccessoriesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerAccessoriesResponse" name="MzkVehicleInspectionServiceEditPassengerAccessoriesResponse" message="tns:MzkVehicleInspectionServiceEditPassengerAccessoriesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerAccessoriesAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editPassengerAccessories_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateConfirmationDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateConfirmationDate" name="MzkVehicleInspectionServiceUpdateConfirmationDateRequest" message="tns:MzkVehicleInspectionServiceUpdateConfirmationDateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateConfirmationDateResponse" name="MzkVehicleInspectionServiceUpdateConfirmationDateResponse" message="tns:MzkVehicleInspectionServiceUpdateConfirmationDateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateConfirmationDateAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_updateConfirmationDate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editVehicleInspection">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editVehicleInspection" name="MzkVehicleInspectionServiceEditVehicleInspectionRequest" message="tns:MzkVehicleInspectionServiceEditVehicleInspectionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editVehicleInspectionResponse" name="MzkVehicleInspectionServiceEditVehicleInspectionResponse" message="tns:MzkVehicleInspectionServiceEditVehicleInspectionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editVehicleInspectionAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editVehicleInspection_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createVehicleInspectionTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/createVehicleInspectionTable" name="MzkVehicleInspectionServiceCreateVehicleInspectionTableRequest" message="tns:MzkVehicleInspectionServiceCreateVehicleInspectionTableRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/createVehicleInspectionTableResponse" name="MzkVehicleInspectionServiceCreateVehicleInspectionTableResponse" message="tns:MzkVehicleInspectionServiceCreateVehicleInspectionTableResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/createVehicleInspectionTableAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_createVehicleInspectionTable_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editPassengerMechCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerMechCondition" name="MzkVehicleInspectionServiceEditPassengerMechConditionRequest" message="tns:MzkVehicleInspectionServiceEditPassengerMechConditionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerMechConditionResponse" name="MzkVehicleInspectionServiceEditPassengerMechConditionResponse" message="tns:MzkVehicleInspectionServiceEditPassengerMechConditionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerMechConditionAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editPassengerMechCondition_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editPassengerTrimInterior">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerTrimInterior" name="MzkVehicleInspectionServiceEditPassengerTrimInteriorRequest" message="tns:MzkVehicleInspectionServiceEditPassengerTrimInteriorRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerTrimInteriorResponse" name="MzkVehicleInspectionServiceEditPassengerTrimInteriorResponse" message="tns:MzkVehicleInspectionServiceEditPassengerTrimInteriorResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerTrimInteriorAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editPassengerTrimInterior_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editTrailorTyreCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorTyreCondition" name="MzkVehicleInspectionServiceEditTrailorTyreConditionRequest" message="tns:MzkVehicleInspectionServiceEditTrailorTyreConditionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorTyreConditionResponse" name="MzkVehicleInspectionServiceEditTrailorTyreConditionResponse" message="tns:MzkVehicleInspectionServiceEditTrailorTyreConditionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editTrailorTyreConditionAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editTrailorTyreCondition_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editCommercialAccessories">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialAccessories" name="MzkVehicleInspectionServiceEditCommercialAccessoriesRequest" message="tns:MzkVehicleInspectionServiceEditCommercialAccessoriesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialAccessoriesResponse" name="MzkVehicleInspectionServiceEditCommercialAccessoriesResponse" message="tns:MzkVehicleInspectionServiceEditCommercialAccessoriesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialAccessoriesAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editCommercialAccessories_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editVehicleDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editVehicleDetails" name="MzkVehicleInspectionServiceEditVehicleDetailsRequest" message="tns:MzkVehicleInspectionServiceEditVehicleDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editVehicleDetailsResponse" name="MzkVehicleInspectionServiceEditVehicleDetailsResponse" message="tns:MzkVehicleInspectionServiceEditVehicleDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editVehicleDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editVehicleDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTasks">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getTasks" name="MzkVehicleInspectionServiceGetTasksRequest" message="tns:MzkVehicleInspectionServiceGetTasksRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getTasksResponse" name="MzkVehicleInspectionServiceGetTasksResponse" message="tns:MzkVehicleInspectionServiceGetTasksResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getTasksAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_getTasks_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="readVehicleDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/readVehicleDetails" name="MzkVehicleInspectionServiceReadVehicleDetailsRequest" message="tns:MzkVehicleInspectionServiceReadVehicleDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/readVehicleDetailsResponse" name="MzkVehicleInspectionServiceReadVehicleDetailsResponse" message="tns:MzkVehicleInspectionServiceReadVehicleDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/readVehicleDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_readVehicleDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editPassengerTyreCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerTyreCondition" name="MzkVehicleInspectionServiceEditPassengerTyreConditionRequest" message="tns:MzkVehicleInspectionServiceEditPassengerTyreConditionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerTyreConditionResponse" name="MzkVehicleInspectionServiceEditPassengerTyreConditionResponse" message="tns:MzkVehicleInspectionServiceEditPassengerTyreConditionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editPassengerTyreConditionAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editPassengerTyreCondition_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDrivingTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateDrivingTime" name="MzkVehicleInspectionServiceUpdateDrivingTimeRequest" message="tns:MzkVehicleInspectionServiceUpdateDrivingTimeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateDrivingTimeResponse" name="MzkVehicleInspectionServiceUpdateDrivingTimeResponse" message="tns:MzkVehicleInspectionServiceUpdateDrivingTimeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateDrivingTimeAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_updateDrivingTime_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editCommercialTrimInterior">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialTrimInterior" name="MzkVehicleInspectionServiceEditCommercialTrimInteriorRequest" message="tns:MzkVehicleInspectionServiceEditCommercialTrimInteriorRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialTrimInteriorResponse" name="MzkVehicleInspectionServiceEditCommercialTrimInteriorResponse" message="tns:MzkVehicleInspectionServiceEditCommercialTrimInteriorResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialTrimInteriorAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editCommercialTrimInterior_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getUserDetails" name="MzkVehicleInspectionServiceGetUserDetailsRequest" message="tns:MzkVehicleInspectionServiceGetUserDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getUserDetailsResponse" name="MzkVehicleInspectionServiceGetUserDetailsResponse" message="tns:MzkVehicleInspectionServiceGetUserDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getUserDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_getUserDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getCustDetails" name="MzkVehicleInspectionServiceGetCustDetailsRequest" message="tns:MzkVehicleInspectionServiceGetCustDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getCustDetailsResponse" name="MzkVehicleInspectionServiceGetCustDetailsResponse" message="tns:MzkVehicleInspectionServiceGetCustDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/getCustDetailsAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_getCustDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateStatusList">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateStatusList" name="MzkVehicleInspectionServiceUpdateStatusListRequest" message="tns:MzkVehicleInspectionServiceUpdateStatusListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateStatusListResponse" name="MzkVehicleInspectionServiceUpdateStatusListResponse" message="tns:MzkVehicleInspectionServiceUpdateStatusListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/updateStatusListAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_updateStatusList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editCommercialChassisBody">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialChassisBody" name="MzkVehicleInspectionServiceEditCommercialChassisBodyRequest" message="tns:MzkVehicleInspectionServiceEditCommercialChassisBodyRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialChassisBodyResponse" name="MzkVehicleInspectionServiceEditCommercialChassisBodyResponse" message="tns:MzkVehicleInspectionServiceEditCommercialChassisBodyResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialChassisBodyAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editCommercialChassisBody_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editCommercialMechCondition">
+      <wsdl:input wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialMechCondition" name="MzkVehicleInspectionServiceEditCommercialMechConditionRequest" message="tns:MzkVehicleInspectionServiceEditCommercialMechConditionRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialMechConditionResponse" name="MzkVehicleInspectionServiceEditCommercialMechConditionResponse" message="tns:MzkVehicleInspectionServiceEditCommercialMechConditionResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/MzkVehicleInspectionService/editCommercialMechConditionAifFaultFault" name="AifFaultFault" message="tns:MzkVehicleInspectionService_editCommercialMechCondition_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

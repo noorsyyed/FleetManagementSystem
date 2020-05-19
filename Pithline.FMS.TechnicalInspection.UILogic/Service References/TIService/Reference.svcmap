@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8f2ce2d7-e04d-42d5-80df-c77eb75f07e9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="xppservice.wsdl" MetadataType="Wsdl" ID="1364188e-2b07-427f-b238-549a8fb6ed6d" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="xppservice.xsd" MetadataType="Schema" ID="a200a4c3-9982-4689-8b39-2a70ffc9729c" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd0" />
+    <MetadataFile FileName="xppservice.disco" MetadataType="Disco" ID="b58c3251-4111-4d43-9702-728979c7f7c1" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?disco" />
+    <MetadataFile FileName="xppservice1.xsd" MetadataType="Schema" ID="b26da286-9fdf-4660-b83e-ed87737967ee" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd3" />
+    <MetadataFile FileName="xppservice2.xsd" MetadataType="Schema" ID="a798c97b-3981-4f41-95eb-b0c4c212ffd0" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd2" />
+    <MetadataFile FileName="xppservice3.xsd" MetadataType="Schema" ID="4b629ac0-8001-4abf-a72a-9300df135a5c" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd1" />
+    <MetadataFile FileName="RoutingService.wsdl" MetadataType="Wsdl" ID="7cdbd2eb-fed3-4f9f-bc3f-b70454eb1c23" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?wsdl" />
+    <MetadataFile FileName="xppservice4.xsd" MetadataType="Schema" ID="62bb5af0-3b26-42b0-b1a9-5ec39898fd19" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd7" />
+    <MetadataFile FileName="xppservice5.xsd" MetadataType="Schema" ID="b2cae1c5-7808-475a-8b9e-09ea57c731d2" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd6" />
+    <MetadataFile FileName="xppservice6.xsd" MetadataType="Schema" ID="1fa84524-11ac-485d-9ad2-cbcc564ab0cd" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd5" />
+    <MetadataFile FileName="xppservice7.xsd" MetadataType="Schema" ID="ca123927-8eec-426e-a1a0-662b92347627" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?xsd=xsd4" />
+    <MetadataFile FileName="xppservice1.wsdl" MetadataType="Wsdl" ID="2e2c13b1-e523-414f-884e-f328ff8d83f6" SourceId="1" SourceUrl="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/TechnicalInspection/xppservice.svc?wsdl=wsdl1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+  <xs:import schemaLocation="http://srfmlbispstg01.lfmd.co.za/MicrosoftDynamicsAXAif60/VehicleInspection/xppservice.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorChassisBodyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstTrailorBody" nillable="true" type="q1:ArrayOfMzkMobiTrailorChassisBodyContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorChassisBodyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q2:ArrayOfMzkMobiTrailorChassisBodyContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerBodyworkRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstPassengerBodywork" nillable="true" type="q3:ArrayOfMzkMobiPassengerBodyworkContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerBodyworkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q4:ArrayOfMzkMobiPassengerBodyworkContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceReadDrivingTimeRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_lstcase" nillable="true" type="q5:ArrayOfstring" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceReadDrivingTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q6:ArrayOfMzkDrivingTimeContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceSaveImageRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_imageInfo" nillable="true" type="q7:ArrayOfMzk_ImageContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceSaveImageResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorAccessoriesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstTrailorAccessory" nillable="true" type="q8:ArrayOfMzkMobiTrailorAccessoriesContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorAccessoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q9:ArrayOfMzkMobiTrailorAccessoriesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorGlassRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstTrailorGlass" nillable="true" type="q10:ArrayOfMzkMobiTrailorGlassContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorGlassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q11:ArrayOfMzkMobiTrailorGlassContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialTyreConditionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstCommercialTyreCondition" nillable="true" type="q12:ArrayOfMzkMobiCommercialTyresContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialTyreConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q13:ArrayOfMzkMobiCommercialTyresContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetInspectionHistoryRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_regNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetInspectionHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q14:ArrayOfMzkInspectionHistoryContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceValidateUserRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceValidateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditGlassRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstGlass" nillable="true" type="q15:ArrayOfMzkMobiPassengerGlassContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditGlassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q16:ArrayOfMzkMobiPassengerGlassContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorMechConditionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstTrailorMechCondition" nillable="true" type="q17:ArrayOfMzkMobiTrailorMechConditionContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorMechConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q18:ArrayOfMzkMobiTrailorMechConditionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerAccessoriesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstPassengerAccessory" nillable="true" type="q19:ArrayOfMzkMobiPassengerAccessoriesContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerAccessoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q20:ArrayOfMzkMobiPassengerAccessoriesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceUpdateConfirmationDateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstTasks" nillable="true" type="q21:ArrayOfMzkTasksContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceUpdateConfirmationDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q22:ArrayOfMzkTasksContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditVehicleInspectionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstVehicleInsp" nillable="true" type="q23:ArrayOfMZKVehicleInspectionTableContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditVehicleInspectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q24:ArrayOfMZKVehicleInspectionTableContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceCreateVehicleInspectionTableRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="contract" nillable="true" type="q25:MzkTasksContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceCreateVehicleInspectionTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerMechConditionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstPassengerMechCondition" nillable="true" type="q26:ArrayOfMzkMobiPassengerMechConditionContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerMechConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q27:ArrayOfMzkMobiPassengerMechConditionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerTrimInteriorRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstPassengerTrimInterior" nillable="true" type="q28:ArrayOfMzkMobiPassengerTrimInteriorContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerTrimInteriorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q29:ArrayOfMzkMobiPassengerTrimInteriorContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorTyreConditionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstTrailorTyreCondition" nillable="true" type="q30:ArrayOfMZKMobiTrailorTyreConditionContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditTrailorTyreConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q31:ArrayOfMZKMobiTrailorTyreConditionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialAccessoriesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstCommercialAccessory" nillable="true" type="q32:ArrayOfMzkMobiCommercialAccessoriesContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialAccessoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q33:ArrayOfMzkMobiCommercialAccessoriesContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditVehicleDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstPassengerVehicleDetails" nillable="true" type="q34:ArrayOfMzkVehicleDetailsContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditVehicleDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q35:ArrayOfMzkVehicleDetailsContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetTasksRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetTasksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q36:ArrayOfMzkTasksContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceReadVehicleDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_caseId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceReadVehicleDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q37:ArrayOfMzkVehicleDetailsContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerTyreConditionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstPassengerTyreCondition" nillable="true" type="q38:ArrayOfMZKMobiPassengerTyreConditionContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditPassengerTyreConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q39:ArrayOfMZKMobiPassengerTyreConditionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceUpdateDrivingTimeRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_drivingTimeList" nillable="true" type="q40:ArrayOfMzkDrivingTimeContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceUpdateDrivingTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialTrimInteriorRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstCommercialtrimInterior" nillable="true" type="q41:ArrayOfMZKMobiCommercialTrimInteriorContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialTrimInteriorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q42:ArrayOfMZKMobiCommercialTrimInteriorContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetUserDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetUserDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q43:MzkValidateUserContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetCustDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_custId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceGetCustDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q44:ArrayOfMzkCustAddressContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceUpdateStatusListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstTasks" nillable="true" type="q45:ArrayOfMzkTasksContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceUpdateStatusListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q46:ArrayOfMzkTasksContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialChassisBodyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstCommercialChassisBody" nillable="true" type="q47:ArrayOfMzkMobiCommercialChassisBodyContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialChassisBodyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q48:ArrayOfMzkMobiCommercialChassisBodyContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialMechConditionRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_lstCommercialMechCondition" nillable="true" type="q49:ArrayOfMzkMobiCommercialMechConditionContract" />
+        <xs:element minOccurs="0" name="_company" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MzkVehicleInspectionServiceEditCommercialMechConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q50:ArrayOfMzkMobiCommercialMechConditionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

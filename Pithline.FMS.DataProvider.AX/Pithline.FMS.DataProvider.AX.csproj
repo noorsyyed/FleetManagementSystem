@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{958D702A-E873-45C2-9CB1-E5FA35C98F6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pithline.FMS.DataProvider.AX</RootNamespace>
+    <AssemblyName>Pithline.FMS.DataProvider.AX</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\ActionSwitch.cs" />
+    <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Helpers\DriverTaskStatus.cs" />
+    <Compile Include="Helpers\LocationTypeConstants.cs" />
+    <Compile Include="Helpers\ProcessStep.cs" />
+    <Compile Include="Helpers\TaskStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ServiceSchedulingProvider.cs" />
+    <Compile Include="Providers\TechnicalInspectionProvider.cs" />
+    <Compile Include="Repositories\SSRepository.cs" />
+    <Compile Include="Service References\SSProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TIProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SSModels\Address.cs" />
+    <Compile Include="SSModels\CaseStatus.cs" />
+    <Compile Include="SSModels\City.cs" />
+    <Compile Include="SSModels\ConfirmationServiceScheduling.cs" />
+    <Compile Include="SSModels\Country.cs" />
+    <Compile Include="SSModels\DestinationType.cs" />
+    <Compile Include="SSModels\LocationType.cs" />
+    <Compile Include="SSModels\Province.cs" />
+    <Compile Include="SSModels\Region.cs" />
+    <Compile Include="SSModels\ServiceSchedulingDetail.cs" />
+    <Compile Include="SSModels\Suburb.cs" />
+    <Compile Include="SSModels\Supplier.cs" />
+    <Compile Include="SSModels\SupplierSelection.cs" />
+    <Compile Include="SSModels\Task.cs" />
+    <Compile Include="TIModels\CustomerDetails.cs" />
+    <Compile Include="TIModels\CVehicle\CAccessories.cs" />
+    <Compile Include="TIModels\CVehicle\CCabTrimInter.cs" />
+    <Compile Include="TIModels\CVehicle\CChassisBody.cs" />
+    <Compile Include="TIModels\CVehicle\CGlass.cs" />
+    <Compile Include="TIModels\CVehicle\CMechanicalCond.cs" />
+    <Compile Include="TIModels\CVehicle\CommercialVehicle.cs" />
+    <Compile Include="TIModels\CVehicle\CPOI.cs" />
+    <Compile Include="TIModels\CVehicle\CTyres.cs" />
+    <Compile Include="TIModels\CVehicle\CVehicleDetails.cs" />
+    <Compile Include="TIModels\ImageCapture.cs" />
+    <Compile Include="TIModels\MaintenanceRepair.cs" />
+    <Compile Include="TIModels\PVehicle\PAccessories.cs" />
+    <Compile Include="TIModels\PVehicle\PassengerVehicle.cs" />
+    <Compile Include="TIModels\PVehicle\PBodywork.cs" />
+    <Compile Include="TIModels\PVehicle\PGlass.cs" />
+    <Compile Include="TIModels\PVehicle\PInspectionProof.cs" />
+    <Compile Include="TIModels\PVehicle\PMechanicalCond.cs" />
+    <Compile Include="TIModels\PVehicle\PTrimInterior.cs" />
+    <Compile Include="TIModels\PVehicle\PTyreCondition.cs" />
+    <Compile Include="TIModels\PVehicle\PVehicleDetails.cs" />
+    <Compile Include="TIModels\PVehicle\VehicleDetails.cs" />
+    <Compile Include="TIModels\Task.cs" />
+    <Compile Include="TIModels\TIData.cs" />
+    <Compile Include="TIModels\TITask.cs" />
+    <Compile Include="TIModels\UserInfo.cs" />
+    <Compile Include="TIModels\VehicleDetails.cs" />
+    <Compile Include="UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkAccountContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkCityContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkCountryRegionContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkCountyContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkDriverContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkLocationTypeContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkProvinceContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkRegionContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceDetailsContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchdTasksContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetCityListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetCountryRegionListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetCustomerAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetCustomersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetDriverAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetDriversResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetLocationTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetODOReadingDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetProvinceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetRegionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetServiceDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetServiceTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetSuburbListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetTasksResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetUserDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetVendorAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetVendorByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetVendorBySelectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetVendorsByClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetVendSupplirerNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceGetZipcodeListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceInsertSerDetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceInsertServiceDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceInsertVendDetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceSaveImageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceUpdateConfirmationDatesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceUpdateStatusListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkServiceSchedulingServiceValidateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkValidateUserContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkVendorAccountContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\Pithline.FMS.DataProvider.AX.SSProxy.MzkZipCodeContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SSProxy\RoutingService.wsdl" />
+    <None Include="Service References\SSProxy\xppservice.wsdl" />
+    <None Include="Service References\SSProxy\xppservice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSProxy\xppservice1.wsdl" />
+    <None Include="Service References\SSProxy\xppservice1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSProxy\xppservice2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSProxy\xppservice3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSProxy\xppservice4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSProxy\xppservice5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSProxy\xppservice6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SSProxy\xppservice7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkCaseCategoryAuthorizationContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkCaseServiceAuthorizationContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalInspectionGetSubComponentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalInspectionGetTasksResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalInspectionGetUserDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalInspectionInsertTechnicalInspectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalInspectionSaveImageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalInspectionUpdateStatusListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalInspectionValidateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkTechnicalTasksContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\Pithline.FMS.DataProvider.AX.TIProxy.MzkValidateUserContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TIProxy\RoutingService1.wsdl" />
+    <None Include="Service References\TIProxy\xppservice2.wsdl" />
+    <None Include="Service References\TIProxy\xppservice21.wsdl" />
+    <None Include="Service References\TIProxy\xppservice8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\xppservice81.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\xppservice82.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\xppservice83.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\xppservice84.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\xppservice85.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\xppservice86.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TIProxy\xppservice87.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pithline.FMS.Framework.Web\Pithline.FMS.Framework.Web.csproj">
+      <Project>{36a2bad0-6b8f-41af-97ee-83ef34b5d42c}</Project>
+      <Name>Pithline.FMS.Framework.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SSProxy\" />
+    <WCFMetadataStorage Include="Service References\TIProxy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TIProxy\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TIProxy\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TIProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TIProxy\xppservice1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SSProxy\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SSProxy\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SSProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
