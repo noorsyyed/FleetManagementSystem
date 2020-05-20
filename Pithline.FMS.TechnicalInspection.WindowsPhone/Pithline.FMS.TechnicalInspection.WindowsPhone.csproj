@@ -227,7 +227,7 @@
       <Project>{7a8a6a29-c647-4567-b8ac-eb97827b431d}</Project>
       <Name>Pithline.FMS.TechnicalInspection.UILogic.WindowsPhone</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Pithline.FMS.WinRT.Components.BackgroundTasks.WindowsPhone\Pithline.FMS.WinRT.Components.BackgroundTasks.WindowsPhone.csproj">
+    <ProjectReference Include="..\Pithline.WinRT.Components.BackgroundTasks.WindowsPhone\Pithline.WinRT.Components.BackgroundTasks.WindowsPhone.csproj">
       <Project>{44813026-7c80-4170-af06-c71e2879e7c3}</Project>
       <Name>Pithline.FMS.WinRT.Components.BackgroundTasks.WindowsPhone</Name>
     </ProjectReference>

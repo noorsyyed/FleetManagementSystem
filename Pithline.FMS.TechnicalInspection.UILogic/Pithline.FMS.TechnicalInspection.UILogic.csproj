@@ -251,7 +251,7 @@
       <Project>{790ad967-f93d-402a-8857-e4c0b64d00e7}</Project>
       <Name>Pithline.FMS.BusinessLogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Pithline.FMS.WinRT.Components.Controls\Pithline.FMS.WinRT.Components.Controls.csproj">
+    <ProjectReference Include="..\Pithline.WinRT.Components.Controls\Pithline.WinRT.Components.Controls.csproj">
       <Project>{567f62b5-9cde-4241-8675-c92a3e9546a8}</Project>
       <Name>Pithline.FMS.WinRT.Components.Controls</Name>
     </ProjectReference>

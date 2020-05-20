@@ -313,7 +313,7 @@
       <Project>{4641b43d-ac24-4c3a-97e2-1dde5950c0a2}</Project>
       <Name>Pithline.FMS.ServiceScheduling.UILogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Pithline.FMS.WinRT.Components.BackgroundTasks\Pithline.FMS.WinRT.Components.BackgroundTasks.csproj">
+    <ProjectReference Include="..\Pithline.WinRT.Components.BackgroundTasks\Pithline.WinRT.Components.BackgroundTasks.csproj">
       <Project>{a268d6e5-5a0c-46a7-9285-372caf007edf}</Project>
       <Name>Pithline.FMS.WinRT.Components.BackgroundTasks</Name>
     </ProjectReference>

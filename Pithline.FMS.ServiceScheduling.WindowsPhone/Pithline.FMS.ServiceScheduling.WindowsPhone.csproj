@@ -242,7 +242,7 @@
       <Project>{8bcc54e1-4586-4a35-9ac9-43e81540b05c}</Project>
       <Name>Pithline.FMS.ServiceScheduling.UILogic.Portable</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Pithline.FMS.WinRT.Components.BackgroundTasks.WindowsPhone\Pithline.FMS.WinRT.Components.BackgroundTasks.WindowsPhone.csproj">
+    <ProjectReference Include="..\Pithline.WinRT.Components.BackgroundTasks.WindowsPhone\Pithline.WinRT.Components.BackgroundTasks.WindowsPhone.csproj">
       <Project>{44813026-7c80-4170-af06-c71e2879e7c3}</Project>
       <Name>Pithline.FMS.WinRT.Components.BackgroundTasks.WindowsPhone</Name>
     </ProjectReference>
