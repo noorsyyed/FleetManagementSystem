@@ -187,9 +187,6 @@
     <Content Include="Assets\car_top.png" />
     <Content Include="Assets\details_image.png" />
     <Content Include="Assets\direction.png" />
-    <Content Include="Assets\eqstra_badge_logo.scale-140.png" />
-    <Content Include="Assets\Eqstra_headerlogo.png" />
-    <Content Include="Assets\Eqstra_logo.png" />
     <Content Include="Assets\grayBG.png" />
     <Content Include="Assets\Left_Image.png" />
     <Content Include="Assets\license_disc.png" />
@@ -199,6 +196,11 @@
     <Content Include="Assets\NetConnected.png" />
     <Content Include="Assets\NetDisconnected.png" />
     <Content Include="Assets\odo_meter.png" />
+    <Content Include="Assets\Pithline_badge_logo.scale-100.png" />
+    <Content Include="Assets\Pithline_badge_logo.scale-140.png" />
+    <Content Include="Assets\Pithline_headerlogo copy.png" />
+    <Content Include="Assets\Pithline_headerlogo.png" />
+    <Content Include="Assets\Pithline_logo.png" />
     <Content Include="Assets\skype_blue.png" />
     <Content Include="Assets\skype_gray.png" />
     <Content Include="Assets\Square310x310Logo.scale-100.png" />

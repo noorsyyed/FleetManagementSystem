@@ -154,13 +154,14 @@
     <None Include="Eqstra.ServiceScheduling_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <Content Include="Assets\BadgeLogo.scale-100.png" />
-    <Content Include="Assets\eqstraLiveTile.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Logo.scale-100 - Copy %282%29.png" />
-    <Content Include="Assets\Logo.scale-100 - Copy.png" />
     <Content Include="Assets\NetConnected.png" />
     <Content Include="Assets\NetDisconnected.png" />
+    <Content Include="Assets\Pithline_badge_logo.scale-100 - Copy.png" />
+    <Content Include="Assets\Pithline_badge_logo.scale-100.png" />
+    <Content Include="Assets\Pithline_badge_logo.scale-140.png" />
+    <Content Include="Assets\Pithline_headerlogo copy.png" />
+    <Content Include="Assets\Pithline_headerlogo.png" />
+    <Content Include="Assets\Pithline_logo.png" />
     <Content Include="Assets\Square310x310Logo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100 - Copy.png" />
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
@@ -180,8 +181,6 @@
     <Content Include="Assets\car_right.png" />
     <Content Include="Assets\car_top.png" />
     <Content Include="Assets\details_image.png" />
-    <Content Include="Assets\Eqstra_headerlogo.png" />
-    <Content Include="Assets\Eqstra_logo.png" />
     <Content Include="Assets\grayBG.png" />
     <Content Include="Assets\Left_Image.png" />
     <Content Include="Assets\license_disc.png" />

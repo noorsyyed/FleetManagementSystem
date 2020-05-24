@@ -1,7 +1,7 @@
 ﻿using Pithline.FMS.BusinessLogic;
 using Pithline.FMS.BusinessLogic.Helpers;
 using Pithline.FMS.TechnicalInspection.UILogic.Services;
-using Pithline.FMS.WinRT.Components.Controls;
+using Pithline.WinRT.Components.Controls;
 using Microsoft.Practices.Prism.StoreApps;
 using Microsoft.Practices.Prism.StoreApps.Interfaces;
 using Newtonsoft.Json;

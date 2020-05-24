@@ -1,6 +1,6 @@
 ﻿using Pithline.FMS.BusinessLogic.Portable;
 using Pithline.FMS.BusinessLogic.Portable.SSModels;
-using Pithline.FMS.WinRT.Components.Controls.WindowsPhone;
+using Pithline.WinRT.Components.Controls.WindowsPhone;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

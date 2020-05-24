@@ -6,7 +6,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
-namespace Pithline.FMS.WinRT.Components.Controls.WindowsPhone
+namespace Pithline.WinRT.Components.Controls.WindowsPhone
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.

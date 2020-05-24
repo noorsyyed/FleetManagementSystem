@@ -12,7 +12,7 @@ using Windows.ApplicationModel.Background;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
 using Pithline.FMS.BusinessLogic.Common;
-namespace Pithline.FMS.WinRT.Components.BackgroundTasks
+namespace Pithline.WinRT.Components.BackgroundTasks
 {
     public sealed class CDBackgroundTask : IBackgroundTask
     {

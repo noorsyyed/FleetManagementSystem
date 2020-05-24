@@ -9,8 +9,8 @@
     <ProjectGuid>{A268D6E5-5A0C-46A7-9285-372CAF007EDF}</ProjectGuid>
     <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Eqstra.WinRT.Components.BackgroundTasks</RootNamespace>
-    <AssemblyName>Eqstra.WinRT.Components.BackgroundTasks</AssemblyName>
+    <RootNamespace>Pithline.WinRT.Components.BackgroundTasks</RootNamespace>
+    <AssemblyName>Pithline.WinRT.Components.BackgroundTasks</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>

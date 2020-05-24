@@ -128,7 +128,6 @@
     <Content Include="Assets\BadgeLogo.scale-100.png" />
     <Content Include="Assets\BadgeLogo.scale-240.png" />
     <Content Include="Assets\camera.png" />
-    <Content Include="Assets\Eqstra_headerlogo.png" />
     <Content Include="Assets\loginIcon.png" />
     <Content Include="Assets\login_bg.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
@@ -136,6 +135,7 @@
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\logout_icon.png" />
     <Content Include="Assets\odo_meter.png" />
+    <Content Include="Assets\Pithline_headerlogo.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-140.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />

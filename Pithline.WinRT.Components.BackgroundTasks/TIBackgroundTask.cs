@@ -14,7 +14,7 @@ using Pithline.FMS.TechnicalInspection.UILogic.Services;
 using Pithline.FMS.BusinessLogic;
 using Pithline.FMS.BusinessLogic.Helpers;
 using Microsoft.Practices.Prism.PubSubEvents;
-namespace Pithline.FMS.WinRT.Components.BackgroundTasks
+namespace Pithline.WinRT.Components.BackgroundTasks
 {
 
     public sealed class TIBackgroundTask : IBackgroundTask

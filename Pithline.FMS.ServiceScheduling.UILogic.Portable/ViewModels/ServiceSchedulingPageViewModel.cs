@@ -2,7 +2,7 @@
 using Pithline.FMS.BusinessLogic.Portable;
 using Pithline.FMS.BusinessLogic.Portable.SSModels;
 using Pithline.FMS.ServiceScheduling.UILogic.Portable.Services;
-using Pithline.FMS.WinRT.Components.Controls.WindowsPhone;
+using Pithline.WinRT.Components.Controls.WindowsPhone;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Mvvm;
 using Microsoft.Practices.Prism.Mvvm.Interfaces;
@@ -29,7 +29,6 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
-
 
 namespace Pithline.FMS.ServiceScheduling.UILogic.Portable
 {

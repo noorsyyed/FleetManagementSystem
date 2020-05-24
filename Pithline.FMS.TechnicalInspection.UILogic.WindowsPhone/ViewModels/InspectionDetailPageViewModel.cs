@@ -1,7 +1,7 @@
 ﻿using Pithline.FMS.BusinessLogic.Portable;
 using Pithline.FMS.BusinessLogic.Portable.TIModels;
 using Pithline.FMS.TechnicalInspection.UILogic.WindowsPhone.Services;
-using Pithline.FMS.WinRT.Components.Controls.WindowsPhone;
+using Pithline.WinRT.Components.Controls.WindowsPhone;
 using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Prism.Mvvm;
 using Microsoft.Practices.Prism.Mvvm.Interfaces;

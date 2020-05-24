@@ -13,7 +13,7 @@ using Microsoft.Practices.Unity;
 using Pithline.FMS.ServiceScheduling.UILogic.Services;
 using Microsoft.Practices.Prism.StoreApps.Interfaces;
 
-namespace Pithline.FMS.WinRT.Components.BackgroundTasks
+namespace Pithline.WinRT.Components.BackgroundTasks
 {
     public sealed class SSBackgroundTask : IBackgroundTask
     {

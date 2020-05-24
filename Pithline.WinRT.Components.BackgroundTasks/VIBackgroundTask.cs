@@ -13,7 +13,7 @@ using Windows.UI.Notifications;
 using Pithline.FMS.BusinessLogic.Common;
 using Windows.Data.Xml.Dom;
 
-namespace Pithline.FMS.WinRT.Components.BackgroundTasks
+namespace Pithline.WinRT.Components.BackgroundTasks
 {
 
     public sealed class VIBackgroundTask : IBackgroundTask

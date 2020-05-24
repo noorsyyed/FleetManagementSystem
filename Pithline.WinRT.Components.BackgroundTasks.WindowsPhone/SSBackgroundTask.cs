@@ -9,13 +9,13 @@ using Windows.Data.Xml.Dom;
 using Windows.Storage;
 using Windows.UI.Notifications;
 using System.Linq;
-namespace Pithline.FMS.WinRT.Components.BackgroundTasks.WindowsPhone
+namespace Pithline.WinRT.Components.BackgroundTasks.WindowsPhone
 {
     public sealed class SSBackgroundTask : IBackgroundTask
     {
         private ITaskService _taskService;
         private string textElementName = "text";
-        private BusinessLogic.Portable.SSModels.UserInfo UserInfo;
+        private FMS.BusinessLogic.Portable.SSModels.UserInfo UserInfo;
         async public void Run(IBackgroundTaskInstance taskInstance)
         {
             _taskService = new TaskService(new HttpFactory());

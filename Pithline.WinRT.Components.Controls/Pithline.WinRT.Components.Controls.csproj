@@ -9,8 +9,8 @@
     <ProjectGuid>{567F62B5-9CDE-4241-8675-C92A3E9546A8}</ProjectGuid>
     <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Eqstra.WinRT.Components.Controls</RootNamespace>
-    <AssemblyName>Eqstra.WinRT.Components.Controls</AssemblyName>
+    <RootNamespace>Pithline.WinRT.Components.Controls</RootNamespace>
+    <AssemblyName>Pithline.WinRT.Components.Controls</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>

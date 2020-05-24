@@ -1,5 +1,5 @@
 ﻿using Pithline.FMS.VehicleInspection.UILogic.Services;
-using Pithline.FMS.WinRT.Components.Controls;
+using Pithline.WinRT.Components.Controls;
 using Microsoft.Practices.Prism.StoreApps;
 using Microsoft.Practices.Prism.StoreApps.Interfaces;
 using Newtonsoft.Json;

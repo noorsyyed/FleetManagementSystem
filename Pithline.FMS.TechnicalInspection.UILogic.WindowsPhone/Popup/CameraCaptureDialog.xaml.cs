@@ -1,5 +1,5 @@
 ﻿using Pithline.FMS.BusinessLogic.Portable.TIModels;
-using Pithline.FMS.WinRT.Components.Controls.WindowsPhone;
+using Pithline.WinRT.Components.Controls.WindowsPhone;
 using System;
 using System.Globalization;
 using System.Linq;
